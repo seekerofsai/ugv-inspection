@@ -42,7 +42,7 @@ python3 -m http.server 8083 --bind 127.0.0.1 --directory runs
 
 ```bash
 # Mac (leave running)
-ssh -N -o ExitOnForwardFailure=yes -L 8083:127.0.0.1:8083 saiseeker@spark-c64c
+ssh -N -o ExitOnForwardFailure=yes -L 8083:127.0.0.1:8083 user@spark
 ```
 
 Open http://localhost:8083/dropout-demo/replay.html on the Mac.
@@ -128,9 +128,9 @@ services. No hardware commands have been sent during development.
 From the Mac:
 
 ```bash
-ssh saiseeker@spark-c64c 'mkdir -p ~/repos'
+ssh user@spark 'mkdir -p ~/repos'
 rsync -av --exclude runs --exclude __pycache__ --exclude .venv \
-  ~/repos/ugv-inspection/ saiseeker@spark-c64c:~/repos/ugv-inspection/
+  ~/repos/ugv-inspection/ user@spark:~/repos/ugv-inspection/
 ```
 
 Then use the same demo/test commands on Spark. The repository is initially local;
