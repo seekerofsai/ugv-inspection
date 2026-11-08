@@ -1,0 +1,16 @@
+{
+  "commissioned": false,
+  "image_topic": "/image_raw",
+  "odom_topic": "/odom",
+  "pan_tilt_topic": "/ugv/joint_states",
+  "stop_topic": "/cmd_vel",
+  "navigate_action": "/navigate_to_pose",
+  "map_frame": "map",
+  "pan_joint": "pt_base_link_to_pt_link1",
+  "tilt_joint": "pt_link1_to_pt_link2",
+  "pan_sign": 1,
+  "tilt_sign": 1,
+  "pan_zero": 0.0,
+  "tilt_zero": 0.0,
+  "laplacian_reference": 150.0
+}
